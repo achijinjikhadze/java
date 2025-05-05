@@ -10,10 +10,5 @@ public class DBConnection {
 	        return DriverManager.getConnection(URL);
 	    }
 	    
-	    public static ResultSet getAuthors() throws SQLException {
-	        String query = "SELECT * FROM users";
-	        try (Connection conn = getConnection(); Statement stmt = conn.createStatement()) {
-	            return stmt.executeQuery(query);
-	        }
-	    }
+	  
 }
